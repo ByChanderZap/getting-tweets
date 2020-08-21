@@ -72,7 +72,10 @@ There is only one endpoint, where you can get the tweets by two options:
   ```bash
     curl -X GET -H "Content-Type: application/json" -d localhost:3000/api/
   ```
-  - Get only tweets that contains one of your keyword (Needs match with the "tag" that you asigned
-  ```bash
-    curl -X POST -H "Content-Type: application/json" -d @req.json localhost:3000/api/?tweetsAbout=platzi_tweet
-  ```
+  - Get only tweets that contains one of your keyword (Needs match with the "tag" that you asigned) BY NOW you have to made a get request with a body like this:
+  
+    ```
+    {
+            "tweetsAbout": "platzi_tweet"
+    }
+    ```
