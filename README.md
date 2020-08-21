@@ -78,4 +78,5 @@ There is only one endpoint, where you can get the tweets by two options:
     {
             "tweetsAbout": "platzi_tweet"
     }
+    to: localhost:3000/api/
     ```
