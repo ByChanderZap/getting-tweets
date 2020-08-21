@@ -1,6 +1,6 @@
 exports.success = (req, res, message, status) => {
     res.status(status || 200).send({
-        data: message
+        message
     });
 }
 

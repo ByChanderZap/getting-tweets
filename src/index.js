@@ -7,6 +7,7 @@ const app = express();
 
 const server = http.createServer(app);
 const io = socketio(server)
+const router = require('./API/routes')
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -19,10 +20,15 @@ require('./rabbit/publisher/index');
 const listener = require('./rabbit/suscriber/index');
 listener.subscriber()   //We have to start our listener
 
-//  API route
-app.use('/api', require('./API/routes'));
+//  API routes
+router(app);
+//app.use('/api', require('./API/routes'));
+
+app.use('/', function (req, res) {
+    res.send('hola!');
+});
 
 server.listen(app.get('port'), () => {
-    console.log(`Server on port ${app.get('port')}: http://localhost:${app.get('port')}`)
+    console.log(`Server on port ${app.get('port')}: http://127.0.0.1:${app.get('port')}/`)
 });
 
