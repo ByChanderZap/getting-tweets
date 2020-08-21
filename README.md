@@ -74,5 +74,5 @@ There is only one endpoint, where you can get the tweets by two options:
   ```
   - Get only tweets that contains one of your keyword (Needs match with the "tag" that you asigned
   ```bash
-    curl -X POST -H "Content-Type: application/json" -d @req.json localhost:3000/api/?tweetsAbout="platzi_tweet"
+    curl -X POST -H "Content-Type: application/json" -d @req.json localhost:3000/api/?tweetsAbout=platzi_tweet
   ```
