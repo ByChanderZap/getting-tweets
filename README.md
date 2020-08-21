@@ -74,9 +74,19 @@ There is only one endpoint, where you can get the tweets by two options:
   ```
   - Get only tweets that contains one of your keyword (Needs match with the "tag" that you asigned) BY NOW you have to made a get request with a body like this:
   
-    ```
-    {
-            "tweetsAbout": "platzi_tweet"
-    }
-    to: localhost:3000/api/
-    ```
+  ```
+  {
+      "tweetsAbout": "platzi_tweet"
+  }
+  to: localhost:3000/api/
+  ```
+
+
+## Contributing ✒️
+Pull requests are welcome!. And if you have an idea for a feature and dont have time to do this, feel free to open a issue!
+
+## License 📄
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Extra 🌈
+You can comment the line 17 on src > index.js and it will run only the api, without the streaming with tweeter, made it if you want to do something only with your local data 💜💜💜
