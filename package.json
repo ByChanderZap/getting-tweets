@@ -1,0 +1,23 @@
+{
+  "name": "twitter-app",
+  "version": "1.0.0",
+  "description": "An app that uses the twitter api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twitter"
+  ],
+  "author": "Alexander Herrera @ByChanderZap",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "0.6.0",
+    "dotenv": "^8.2.0",
+    "express": "4.17.1",
+    "ioredis": "4.17.3",
+    "needle": "^2.5.0",
+    "socket.io": "^2.3.0",
+    "twitter": "1.7.1"
+  }
+}
