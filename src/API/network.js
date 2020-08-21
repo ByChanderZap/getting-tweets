@@ -6,8 +6,6 @@ const response = require('./response');
 
 router.get('/', async (req, res) => {
     const { tweetsAbout } = req.body;
-    console.log(tweetsAbout)
-    console.log('im here')
     try {
         const data = await storage.getTweets(tweetsAbout);
         //  req, res, message, status

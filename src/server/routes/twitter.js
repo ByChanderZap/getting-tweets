@@ -3,8 +3,6 @@ const rabbitPublish = require('../../rabbit/publisher/index')
 
 module.exports = () => {
     // The code below sets the bearer token from your environment variables
-    // To set environment variables on Mac OS X, run the export command below from the terminal: 
-    // export BEARER_TOKEN='YOUR-TOKEN'
     const token = process.env.TWITTER_BEARER_TOKEN;
 
     const rulesURL = 'https://api.twitter.com/2/tweets/search/stream/rules'
@@ -100,9 +98,7 @@ module.exports = () => {
         stream.on('data', data => {
             try {
                 const json = JSON.parse(data);
-                rabbitPublish.publisher(json)
-                //  console.log(json);
-                
+                rabbitPublish.publisher(json);                
 
             } catch (e) {
                 // Keep alive signal received. Do nothing.

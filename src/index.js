@@ -22,11 +22,7 @@ listener.subscriber()   //We have to start our listener
 
 //  API routes
 router(app);
-//app.use('/api', require('./API/routes'));
 
-app.use('/', function (req, res) {
-    res.send('hola!');
-});
 
 server.listen(app.get('port'), () => {
     console.log(`Server on port ${app.get('port')}: http://127.0.0.1:${app.get('port')}/`)
