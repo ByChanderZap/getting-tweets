@@ -5,8 +5,8 @@ const resolvers = {
             return saludo
         }
     },
-    Tweet() {
-        
+    tweet(root, {tweetsAbout}) {
+        return `tweets about ${tweetsAbout}`
     }
 }
 

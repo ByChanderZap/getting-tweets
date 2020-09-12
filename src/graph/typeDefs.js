@@ -1,6 +1,7 @@
 const typeDefs = `
     type Query {
         ping(name: String): String
+        tweet(tweetsAbout: String): [Tweet]
     }
 
     type Tweet {
