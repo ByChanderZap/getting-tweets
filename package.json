@@ -4,7 +4,7 @@
   "description": "An app that uses the twitter api",
   "main": "index.js",
   "scripts": {
-    "dev": "node src/index.js"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "twitter"
@@ -14,10 +14,14 @@
   "dependencies": {
     "amqplib": "0.6.0",
     "dotenv": "^8.2.0",
-    "express": "4.17.1",
+    "express": "^4.17.1",
+    "graphql-yoga": "^1.18.3",
     "ioredis": "4.17.3",
     "needle": "^2.5.0",
-    "socket.io": "^2.3.0",
     "twitter": "1.7.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4"
   }
 }

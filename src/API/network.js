@@ -15,5 +15,4 @@ router.get('/', async (req, res) => {
         response.error(req, res, "Error getting data.", 500, error);
     }
 })
-
 module.exports = router;

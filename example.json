@@ -1,0 +1,14 @@
+{
+    "tweetData": {
+        "tweet_id": "1303533640081698817",
+        "tweet_text": "O @DFRLab está oferecendo 120 bolsas pra treinamento e participação num super evento sobre desinformação e OSINT em 2021. Inscrevam-se! https://t.co/aisOuttJe2"
+    },
+    "user": {
+        "Id": "26040274",
+        "username": "@luizabandeira",
+        "name": "Luiza Bandeira"
+    },
+    "matching": {
+        "tag": "open_source_tweet"
+    }
+}
