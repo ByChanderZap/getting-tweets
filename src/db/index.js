@@ -1,5 +1,7 @@
 const Redis = require('ioredis');
 const redis = new Redis();
+
+
 const addTweets = async (key, tweet) => {
     try {
         const result = await redis.rpush(key, tweet);
@@ -12,7 +14,7 @@ const addTweets = async (key, tweet) => {
 
 const getTweets = async (key) => {
     try {
-        const data = await redis.lrange(key, 0, 50);
+        const data = await redis.lrange(key, 0, -1);
         //data.forEach(twt => console.log(twt));
         //console.log(data)
 
