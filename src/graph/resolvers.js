@@ -8,8 +8,8 @@ const resolvers = {
             return saludo
         },
 
-        async tweet(root, {theme} ) {
-            const query = theme || 'tweets';
+        async tweets(root, { tweetsAbout } ) {
+            const query = tweetsAbout || 'tweets';
             const data = await rdb.getTweets(query)
             return data.data
         }
