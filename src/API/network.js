@@ -8,6 +8,7 @@ router.get('/', async (req, res) => {
     const { tweetsAbout } = req.body;
     try {
         const data = await storage.getTweets(tweetsAbout);
+        console.log(data)
         //  req, res, message, status
         response.success(req, res, data, 200);
     } catch (error) {

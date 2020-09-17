@@ -5,18 +5,21 @@ const typeDefs = `
     }
 
     type Tweet {
-        tweetData: {
-            tweet_id: String!
-            tweet_text: String!
-        }
-        user: {
-            id: String!
-            username: String!
-            name: String!
-        }
-        matching: {
-            tag: String!
-        }
+        tweetData: Tdata
+        user: User
+        matching: Match
+    }
+    type Tdata {
+        tweet_id: String!
+        tweet_text: String!
+    }
+    type User {
+        id: String!
+        username: String!
+        name: String!
+    }
+    type Match {
+        tag: String!
     }
 `;
 
